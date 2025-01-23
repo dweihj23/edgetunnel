@@ -130,7 +130,7 @@ export default {
                     default:
                         // return new Response('Not found', { status: 404 });
                         // For any other path, reverse proxy to 'www.233id.com' and return the original response
-                        url.hostname = 'www.233id.com';
+                        url.hostname = '';
                         url.protocol = 'https:';
                         request = new Request(url, request);
                         return await fetch(request);
