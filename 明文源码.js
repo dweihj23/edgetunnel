@@ -1,13 +1,9 @@
-// @ts-ignore
-import { connect } from 'cloudflare:sockets';
 
-// 建议修改为自己的 UUID
+import { connect } from 'cloudflare:sockets';
 let userID = '9bace564-665d-4d99-8ff9-85feabad6fae';
 
-// 生成配置文件的 Cloudflare 优选 IP (www.gov.se   speed.cloudflare.com等使用Cloudflare CDN的网站也可以)
-const bestCFIP = "www.visa.com.hk"
+const bestCFIP = "104.19.248.219"
 
-// 用于 Cloudflare 网站的代理 IP
 const proxyIPs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
